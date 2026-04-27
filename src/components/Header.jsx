@@ -1,6 +1,12 @@
+import HeaderLogo from "./HeaderLogo.jsx"
+import HeaderNavBar from "./HeaderNavBar.jsx"
+
 function Header() {
     return <>
-        <footer></footer>
+        <header className="row">
+            <HeaderLogo/>
+            <HeaderNavBar/>
+        </header>
     </>
 }
 

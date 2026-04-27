@@ -1,14 +1,16 @@
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import Main from "./components/Main"
+import Footer from "./components/Footer.jsx"
+import Header from "./components/Header.jsx"
+import Main from "./components/Main.jsx"
 
 
 function App() {
 
   return <>
+  <div className="container-fluid">
     <Header/>
     <Main/>
     <Footer/>
+  </div>
   </>
 }
 
