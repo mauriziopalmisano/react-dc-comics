@@ -1,26 +1,44 @@
 function FooterNavBar (){
+    const navbarFooterEl = [
+        {
+            id: 1,
+            url: '/img/buy-comics-digital-comics.png',
+            title: 'Digital Comics'
+        },
+        {
+            id: 2,
+            url: '/img/buy-comics-merchandise.png',
+            title: 'DC merchandise'
+        },
+        {
+            id: 3,
+            url: '/img/buy-comics-subscriptions.png',
+            title: 'subscriptions'
+        },
+        {
+            id: 4,
+            url: '/img/buy-comics-shop-locator.png',
+            title: 'Comics Shop locator'
+        },
+        {
+            id: 5,
+            url: '/img/buy-dc-power-visa.svg',
+            title: 'DC Power Visa'
+        }
+    ]
+
+
+    const navbarFooterListItem = navbarFooterEl.map(element => {
+        const {id, url, title} = element;
+        return <div key={id} className="d-flex align-items-center mx-5 gap-2">
+                    <img className="footer-navbar-img" src={url} alt={title} />
+                <a className="text-white text-decoration-none text-nowrap" href={`#${title}`}>{title.toUpperCase()}</a>
+            </div>
+    })
+
     return<>
-        <div className="col-12 d-flex">
-            <div>
-                <img src="/img/buy-comics-digital-comics.png" alt="" />
-                <a href="#">DIGITAL COMICS</a>
-            </div>
-             <div>
-                <img src="/img/buy-comics-merchandise.png" alt="" />
-                <a href="#">DC MERCHANDISE</a>
-            </div>
-             <div>
-                <img src="/img/buy-comics-subscriptions.png" alt="" />
-                <a href="#">SUBSCRIPTION</a>
-            </div>
-             <div>
-                <img src="/img/buy-comics-subscriptions.png" alt="" />
-                <a href="#">COMIC SHOP LOCATOR</a>
-            </div>
-             <div>
-                <img src="/img/buy-dc-power-visa.svg" alt="" />
-                <a href="#">DC POWER VISA</a>
-            </div>
+        <div className="col-12 d-flex bg-primary justify-content-center align-items-center p-5">
+            {navbarFooterListItem}
         </div>
     </>
 }
