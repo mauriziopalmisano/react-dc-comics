@@ -50,3 +50,16 @@ body {
 .footer-navbar {
   height: 200px;
 }
+
+.info-list{
+  height: 500px;
+  padding: 60px 0px;
+  background-image: url(/public/img/dc-logo-bg.png),url(/public/img/footer-bg.jpg);
+  background-position: 80%, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 40%, cover;
+}
+
+.footer-socials{
+  height: 200px;
+}
