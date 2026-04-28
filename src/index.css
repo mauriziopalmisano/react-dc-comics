@@ -19,9 +19,10 @@ body {
 .navbar-line:focus,
 .navbar-line:hover {
   border-bottom: 5px solid #0d6efd;
+
   .color-black {
     color: #0d6efd;
-  }  
+  }
 }
 
 .text-style {
@@ -36,13 +37,16 @@ body {
   height: 150px;
 }
 
-
-.main-section {
-  min-height: 200px;
-  align-items: center;
+.main-bg-img {
+  min-height: 500px;
+  background-image: url(/public/img/jumbotron.jpg);
+  background-color: black;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.footer-navbar-img{
+.footer-navbar-img {
   width: 75px;
   height: 80px;
 }
@@ -51,15 +55,21 @@ body {
   height: 200px;
 }
 
-.info-list{
+.info-list {
   height: 500px;
   padding: 60px 0px;
-  background-image: url(/public/img/dc-logo-bg.png),url(/public/img/footer-bg.jpg);
+  background-image: url(/public/img/dc-logo-bg.png), url(/public/img/footer-bg.jpg);
   background-position: 80%, center;
   background-repeat: no-repeat, no-repeat;
   background-size: 40%, cover;
 }
 
-.footer-socials{
+.footer-socials {
   height: 200px;
+}
+
+.img-thumb {
+  width: 250px;
+  aspect-ratio: 5/8;
+  object-fit: cover;
 }
