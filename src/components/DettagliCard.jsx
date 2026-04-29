@@ -3,23 +3,28 @@ function DettagliCard({infoCard, chiudiCard}) {
 
 
   return (
-    <div className="col-12" onClick={chiudiCard}>
-        <img src={thumb} alt="" />
+    <div className="col-12 position-relative d-flex my-5">
+        <button className="btn btn-outline-primary position-absolute close-btn-position rounded-0 fw-bold border-3" onClick={chiudiCard}>X</button>
+        <img className="img-detail" src={thumb} alt="" />
         <ul>
-            <li>
-                <h4>{title}</h4>
+            <li className="mb-4">
+                <h4 className="text-white">{title}</h4>
             </li>
             <li>
-                <p>{description}</p>
+                <span className="text-white fw-bold fs-5">Description</span>
+                <p className="text-white fs-5">{description}</p>
             </li>
             <li>
-                <p>{reliase}</p>
+                <span className="text-white fw-bold fs-5">Reliase Date</span>
+                <p className="text-white fs-4\">{reliase}</p>
             </li>
             <li>
-                <p>{type}</p>
+                <span className="text-white fw-bold fs-5">Type</span>
+                <p className="text-white fs-5">{type}</p>
             </li>
             <li>
-                <p>{price}</p>
+                <span className="text-white fw-bold fs-5">Price</span>
+                <p className="text-white fs-4">{price}</p>
             </li>
         </ul>
     </div>

@@ -87,8 +87,20 @@ body {
 .img-thumb {
   aspect-ratio: 5/8;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .col-h{
   height: 450px;
+}
+
+.close-btn-position{
+  top: 0;
+  right: 0;
+}
+
+.img-detail{
+  width: 300px;
+  aspect-ratio: 5/8;
+  object-fit: cover;
 }
