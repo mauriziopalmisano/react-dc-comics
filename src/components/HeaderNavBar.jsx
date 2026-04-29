@@ -53,7 +53,7 @@ function HeaderNavBar() {
     
 
     return <>
-        <ul className="col d-flex justify-content-center">
+        <ul className="col d-flex justify-content-center mb-0">
             {navbarListItems}
         </ul>
     </>

@@ -6,11 +6,24 @@ import Main from "./components/Main.jsx"
 function App() {
 
   return <>
-  <div className="container-fluid">
+  <div>
+  <div className="container">
     <Header/>
-    <Main/>
-    <Footer/>
   </div>
+  </div>
+
+
+  <div className="main-bg-img">
+  </div>
+  <div className="bg-dark">
+  <div className="container position-relative">
+    <span className="text-white text-uppercase fw-bold fs-4 bg-primary  translate position-absolute">current series</span>
+    <Main/>
+  </div>
+  </div>
+
+
+      <Footer/>
   </>
 }
 

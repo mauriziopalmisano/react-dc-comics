@@ -10,9 +10,9 @@ function Card() {
 
     const cardInfoJSX = comics.map(element => {
         const { id, thumb, series } = element;
-        return<div className="col-2 ">
-            <div key={id} className="d-flex flex-column bg-dark p-5 mx-3">
-                <img className="img-thumb flex-shrink-0" src={id === 5 ? thumbReplece : thumb} alt={series} />
+        return<div key={id} className="col-2 pt-5 ">
+            <div  className="d-flex flex-column mx-3">
+                <img className="img-thumb img-fluid rounded-1" src={id === 5 ? thumbReplece : thumb} alt={series} />
                 <div className="flex-shrink-0">
                     <a className=" text-decoration-none text-white fs-5 fw-medium" href={`#${series}`}>{series}</a>
                 </div>

@@ -44,9 +44,11 @@ function FooterInfoList() {
     })
 
     return <>
-        <div className="col d-flex flex-wrap flex-column align-content-start info-list ">
+    <div className="row ">
+        <div className="col-6 d-flex flex-wrap flex-column align-content-start pt-5 col-h">
             {infoListJSX}
         </div>
+    </div>
     </>
 }
 

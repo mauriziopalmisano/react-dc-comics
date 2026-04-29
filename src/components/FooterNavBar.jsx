@@ -30,17 +30,16 @@ function FooterNavBar (){
 
     const navbarFooterListItem = navbarFooterEl.map(element => {
         const {id, url, title} = element;
-        return <div key={id} className="d-flex align-items-center mx-5 gap-2">
+        return <div key={id} className="col d-flex align-items-center footer-navbar ">
                     <img className="footer-navbar-img" src={url} alt={title} />
-                <a className="text-white text-decoration-none text-nowrap" href={`#${title}`}>{title.toUpperCase()}</a>
+                <a className="text-white text-decoration-none text-nowrap p-2" href={`#${title}`}>{title.toUpperCase()}</a>
             </div>
     })
 
-    return<>
-        <div className="col-12 d-flex bg-primary justify-content-center align-items-center p-5">
+    return <div className="row row-cols-5 ">
             {navbarFooterListItem}
-        </div>
-    </>
+    </div>
+    
 }
 
 export default FooterNavBar

@@ -9,15 +9,15 @@ function FooterSocials() {
             url: 'img/footer-twitter.png'
         },
         {
-            id: 1,
+            id: 3,
             url: '/img/footer-youtube.png'
         },
         {
-            id: 1,
+            id: 4,
             url: '/img/footer-pinterest.png'
         },
         {
-            id: 1,
+            id: 5,
             url: '/img/footer-periscope.png'
         }
     ]
@@ -31,7 +31,8 @@ function FooterSocials() {
 
 
     return <>
-        <div className="col-12 d-flex justify-content-between footer-socials bg-dark align-items-center px-5">
+    <div className="row ">
+        <div className="col d-flex justify-content-between footer-socials align-items-center px-5">
             <div>
                 <button className="btn btn-outline-primary rounded-0 text-white border-3 fs-5 p-3 fw-bold">SIGN-UP NOW!</button>
             </div>
@@ -40,6 +41,7 @@ function FooterSocials() {
                 {socialsJSX}
             </div>
         </div>
+    </div>
     </>
 }
 
