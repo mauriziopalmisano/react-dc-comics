@@ -1,8 +1,8 @@
-import comics from "./comics.js"
+import comics from "../../data/comics.js"
 import DettagliCard from "./DettagliCard.jsx";
 import { useState } from "react";
 
-function Card() {
+function CardsList() {
     const [cardSelezionata, steCardselezionata] = useState(null);
 
 
@@ -41,4 +41,4 @@ function Card() {
         </>
     )
 }
-export default Card
+export default CardsList
